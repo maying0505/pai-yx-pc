@@ -1,0 +1,101 @@
+.main {
+    background: #f1f1f1;
+    padding-top: 100px;
+}
+
+.main .content {
+    width: 1200px;
+    margin: -30px auto 20px;
+    overflow: hidden;
+    min-height: 800px;
+
+
+}
+
+.main .content .left {
+    width: 200px;
+    float: left;
+    height: 280px;
+}
+
+.main .content .left .tab-bar {
+    border-radius: 5px;
+    background: #fff;
+    padding: 30px 0
+}
+
+.main .content .left .service-info {
+    width: 140px;
+    padding: 30px;
+    height: 140px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/*.main .content .left .service-info p, .main .content .left .service-info a*/
+/*{*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*.left .service-info a*/
+/*{*/
+/*    text-align: center;*/
+/*    border: 1px solid #ccc;*/
+/*}*/
+
+
+.main .content .left .tab-bar .tab {
+    display: block;
+    border-bottom: 0 none;
+    padding: 10px 0;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+
+.main .content .left .tab-bar .tab-active {
+    color: #CC9756
+}
+
+
+.main .content .right {
+    width: 900px;
+    padding: 25px 25px 50px 25px;
+    float: right;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+
+}
+
+.right h1 {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.right p {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+
+.search-input-btn {
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    background: linear-gradient(90deg, rgba(226, 193, 153, 1), rgba(204, 151, 86, 1));
+    position: absolute;
+    right: -30px;
+    top: 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+
+
+
+

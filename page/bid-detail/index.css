@@ -1,0 +1,399 @@
+.main{
+	padding-bottom: 260px;
+}
+.main-top{
+	margin-bottom: 20px;
+}
+.back-box{
+	cursor: pointer;
+	font-size: 18px;
+	padding-left: 25px;
+	background: url(../../public/image/back-icon.png) no-repeat;
+	background-size: 20px;
+	background-position: left;
+}
+.back-box a{
+	color: #333;
+}
+.back-box a:hover{
+	color: rgba(204,151,86,1);
+}
+.search-input-box{
+	width:280px;
+	height:40px;
+	border:1px solid rgba(215,215,217,1);
+	border-radius:10px;
+	padding-left: 30px;
+}
+.search-input-box input{
+	border: none;
+	background: inherit;
+}
+.search-input-box span{
+	width: 50px;
+	display: inline-block;
+	background: url(../../public/image/search-icon.png) no-repeat;
+	background-position: 15px;
+	background-size: 20px;
+	cursor: pointer;
+}
+.bd-img-cover{
+	width:600px;
+	height:402px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bd-img-box .bd-img-list{
+	width: 600px;
+	overflow: hidden;
+	margin-top: 10px;
+	position: relative;
+}
+.bd-img-list-content {
+	position: relative;
+}
+.bd-info-amount-time{
+	margin-top: 30px;
+}
+.bd-info-bot{
+	margin-top: 40px;
+}
+.bd-img-box .bd-img-list .cur-img img{
+	/* width: 120px;/ */
+	border:2px solid rgba(204,151,86,1);
+}
+.bd-img-box .bd-img-list img{
+	width: 112px;
+	height: 80px;
+	margin: 0 2.5px;
+	cursor: pointer;
+	border:2px solid #fff;
+}
+.previous-btn,.next-btn{
+	width:30px;
+	height:80px;
+	opacity:0.3;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+	display: none;
+}
+.previous-btn{
+	left: 0;
+	background: rgba(0,0,0,1) url(../../public/image/img-previous.png) no-repeat;
+	background-position: center;
+	background-size: 9px 19px;
+}
+.next-btn{
+	right: 0;
+	background: rgba(0,0,0,1) url(../../public/image/img-next.png) no-repeat;
+	background-position: center;
+	background-size: 9px 19px;
+}
+.previous-btn:hover{
+	background: rgba(0,0,0,1) url(../../public/image/img-previous-active.png) no-repeat;
+	background-position: center;
+	background-size: 9px 19px;
+}
+.next-btn:hover{
+	background: rgba(0,0,0,1) url(../../public/image/img-next-active.png) no-repeat;
+	background-position: center;
+	background-size: 9px 19px;
+}
+
+.bd-info{
+	margin-left: 20px;
+}
+.bid-name-text{
+	font-size:24px;
+	color:rgba(51,51,51,1);
+	margin-bottom: 10px;
+}
+.bd-info-main{
+	margin: 20px 0;
+	padding: 20px;
+	background:rgba(243,245,249,1);
+	color: #666;
+	font-size: 12px;
+	line-height: 2;
+}
+.wei-show img{
+	width:98px;
+	height:98px;
+	border-radius:10px;
+	margin-bottom: 10px;
+}
+.bid-order{
+	padding: 6px 20px;
+	background:linear-gradient(90deg,rgba(226,193,153,1),rgba(204,151,86,1));
+	border-radius:10px;
+	display: none;
+	color: #fff;
+	font-size: 18px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.bid-order span{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../../public/image/bid-order.png) no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.bid-ask{
+	cursor: pointer;
+	padding: 5px 20px;
+	border-radius:10px;
+	border:1px solid rgba(204,151,86,1);
+	display: inline-block;
+	color:rgba(204,151,86,1);
+	font-size: 18px;
+	margin-right: 20px;
+}
+.bid-ask span{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../../public/image/bid-ask.png) no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.bd-mx{
+	margin-top: 50px;
+}
+.bd-mx-title{
+	margin-bottom: 20px;
+	line-height: 50px;
+	height:50px;
+	padding: 0 20px;
+	background:rgba(243,245,249,1);
+
+}
+.bd-mx-title a{
+	font-size: 20px;
+	margin-right: 40px;
+	cursor: pointer;
+	color: #333;
+}
+
+.bd-mx-title a:hover{
+	color: #CC9756;
+}
+.bd-mx-m{
+	border:1px solid rgba(237,239,242,1);
+	min-height: 150px;
+	margin-bottom: 20px;
+}
+.bd-mx-m .title{
+	height:50px;
+	background:rgba(250,244,238,1);
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+.bd-mx-m .content{
+	padding: 20px;
+}
+.recommend{
+	margin: 30px 0;
+}
+.recommend .title{
+	font-size: 24px;
+}
+
+.files-img-item{
+	width:570px;
+	height:390px;
+	margin-bottom: 20px;
+}
+.files-img-item img{
+	width: 100%;
+	height:100%;
+}
+#auction-details{
+	border-bottom: none;
+}
+#auction-details .content{
+	padding: 0;
+}
+#auction-details .th{
+	width: 50%;
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+#auction-details .th span{
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	border-right: 1px solid #eee;
+}
+#auction-details .th:nth-child(odd){
+	width: calc(50% - 1px);
+}
+#auction-details .th:nth-child(even), #auction-details .th span:nth-child(even){
+	border-right: none;
+}
+#auction-details .th span:nth-child(odd){
+	width: 150px;
+}
+#geographical-position .content .name{
+	text-align: center;
+}
+#geographical-position .content .name span{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding-left: 50px;
+	background: url(../../public/image/address-icon.png) no-repeat;
+	background-position-x: 10px;
+	background-size: 30px;
+	font-size: 12px;
+}
+#container {
+	margin-top: 20px;
+	width:100%;
+	height: 400px;
+} 
+.bid-int-table{
+	margin-bottom: 20px;
+} 
+.bid-int-table img{
+	width: 570px;
+    height: 390px;
+}
+.appointment-popup-box{
+	display: none;
+}
+.appointment-popup{
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	background: #fff;
+	z-index: 1001;
+	border-radius: 20px;
+}
+.appointment-popup .title{
+	padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	background: url(../../public/image/close@2x.png) no-repeat;
+	background-position: 350px;
+	background-size: 30px;
+	font-size: 18px;
+}
+.appointment-popup .form-box{
+	padding: 20px;
+}
+.appointment-popup input{
+	border: 1px solid #eee;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.appointment-popup p{
+	margin-bottom: 20px;
+}
+
+.form_select {
+    /* 清除默认边框 */
+	border: 1px solid #eee;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-left: 10px;
+    /* 清除默认的箭头样式 */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* 右侧添加小箭头的背景图 */
+    background: url('../../public/image/xiala.png') 350px center no-repeat;
+    background-size: 12px;
+}
+.appointment-popup .submit-btn{
+	width: 100%;
+	background:linear-gradient(90deg,rgba(226,193,153,1),rgba(204,151,86,1));
+	color: #fff;
+	margin-left: 0;
+	text-align: center;
+	cursor: pointer;
+}
+.form-box p span{
+	width: 70px;
+}
+.form-box p .smcode{
+	font-size: 12px;
+	width: 100px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+    padding: 10.5px 0;
+	background: rgba(226,193,153,1);
+	border-radius: 0 5px 5px 0;
+}
+.appointment-popup .smcode-input{
+	border-radius: 5px 0 0 5px;
+}
+.auction-consult-popup-box{
+	display: none;
+}
+.auction-consult-popup{
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1001;
+	border-radius: 20px;
+	width: 350px;
+	border-radius: 10px;
+	background: #fff;
+}
+.auction-consult-popup .title{
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+.auction-consult-popup .title .call-icon{
+	vertical-align: middle;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../../public/image/call-icon.png) no-repeat;
+	background-size: 30px;
+	margin-right: 10px;
+}
+
+.auction-consult-popup .title .close-icon{
+	cursor: pointer;
+	vertical-align: middle;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../../public/image/close@2x.png) no-repeat;
+	background-size: 30px;
+	position: absolute;
+	right: 20px;
+}
+.auction-consult-popup .content{
+	text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.recommend .hot-recommend-content{
+	margin-top: 30px;
+}
+.recommend .hot-recommend-content .hr-m{
+	width: 290px;
+	margin-bottom: 0;
+}
+.hr-m-name{
+	padding: 0 5px;
+}

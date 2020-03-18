@@ -1,0 +1,203 @@
+.main{
+    background: rgba(247,247,247,1);
+    padding-top: 80px;   
+}
+.main-top{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.search-input-box{
+	width:280px;
+	height:40px;
+	border:1px solid rgba(215,215,217,1);
+	border-radius:10px;
+	padding-left: 30px;
+}
+.search-input-box input{
+	border: none;
+	background: inherit;
+}
+.search-input-box span{
+	width: 50px;
+	display: inline-block;
+	background: url(../../public/image/search-icon.png) no-repeat;
+	background-position: 15px;
+	background-size: 20px;
+	cursor: pointer;
+}
+.back-box .icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../../public/image/arrow.png) no-repeat;
+    background-size: contain;
+    margin: 0 5px;
+}
+.back-box span{
+    color: #666;
+}
+.bid-screen{
+    border:1px solid rgba(237,239,242,1);
+}
+.bid-screen .th{
+    border-bottom: 1px solid #eee;
+}
+.bid-screen .th:last-child{
+    border-bottom: none;
+}
+.bid-screen .th-label{
+    padding: 15px 0;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+
+}
+.th-content{
+    padding: 15px;
+    border-left: 1px solid #eee;
+
+}
+.th-content span{
+    margin: 0 10px;
+    padding: 2px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.th-content > span:hover{
+    color: rgba(204,151,86,1);
+}
+.th-content span.active{
+    background:rgba(204,151,86,1);
+    color: #fff;
+}
+.bid-list-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.screen-box{
+    height: 50px;
+    line-height: 50px;
+}
+.screen-box{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.bid-sort-box{
+    padding-left: 20px;
+}
+.bid-sort-box span{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.bid-sort-box span.active{
+    color: rgba(204,151,86,1);
+}
+.screen-box div{
+    border-right: 1px solid #eee;
+}
+.screen-box .all-bid-box{
+    border-right: none;
+    padding: 0 20px;
+}
+.all-bid-num{
+    color: rgba(204,151,86,1);
+}
+.price-box,.time-box{
+    padding: 0 10px;
+}
+.price-box input,.time-box input{
+    width: 100px;
+    border: 1px solid #eee;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.price-box span,.time-box span{
+    margin: 0 3px;
+}
+.pagination-box{
+    display: none;
+    text-align: center;
+}
+
+.clear-time,.ok-price{
+    width: 50px;
+    display: inline-block;
+}
+.clear-time a,.ok-price a{
+    display: inline-block;
+    color: #666;
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    opacity: 0;
+}
+.ok-price a{
+    background: #CC9756;
+    color: #fff;
+}
+.go-index{
+    color: #333;
+}
+.bid-address-box .province{
+    position: relative;
+    margin: 0;
+    padding: 3px 20px;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+.th-content .province-city{
+    display: none;
+    position: absolute;
+    width: 890px;
+    left: -1;
+    top: 27px;
+    padding: 20px;
+    z-index: 1;
+    background:rgba(243,245,249,1);
+}
+.th-content span.active .province-city .active{
+    color: #CC9756;
+    background: inherit;
+}
+
+.th-content .all-address{
+    height: 21.2px;
+    line-height: 21.2px;
+    margin-top: -2px;
+}
+.province:hover{
+    color: #CC9756;
+}
+.province-city {
+    color: #666;
+}
+.th-content .province-city span{
+    display: inline-block;
+}
+.province:hover .trangle{
+    display: block;
+}
+.province .trangle{
+    display: none;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid #F3F5F9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -4px;
+}
+.province i{
+    font-style:normal;
+}
+.bl-m{
+	transition: all .5s;
+}
+.bl-m:hover{
+    box-shadow: 7px 7px 7px -7px #5E5E5E;
+}

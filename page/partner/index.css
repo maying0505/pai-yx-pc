@@ -1,0 +1,25 @@
+.main .content{
+    width: 1200px;
+    margin:20px auto;
+    background: #fff;
+}
+
+.main .content .fuzhu{
+    padding:25px 50px;
+    background:rgba(247,247,247,1);
+}
+
+.main .content .finance{
+    margin-top: 20px;
+    padding:25px 50px;
+    background:rgba(247,247,247,1);
+}
+
+.main .content h1
+{
+    color:rgba(102,102,102,1);
+    font-size:18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

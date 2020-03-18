@@ -1,0 +1,181 @@
+.ma{margin:0 auto}
+
+.uc-header{height: 45px;padding:12px 0}
+.uc-header .uc-logo{ height: 40px;width: 40px;background:url("../../public/image/header_logo.png") left center ;display: inline-block;background-size: contain;margin-top: 3px;cursor: pointer}
+.uc-header .logo-name{height: 45px;line-height: 45px;display: inline-block;vertical-align: top;margin-left: 10px;cursor: pointer}
+.uc-header .uc-link{height: 45px;line-height: 45px;display: inline-block;vertical-align: top;margin-left: 20px;color: #000; cursor: pointer}
+.uc-link:visited,.uc-link:active,.logo-name:visited,.logo-name:active{color:#000;}
+.uc-header .line {height: 45px;width: 1px;background: rgba(212,213,217,1);display: inline-block;vertical-align: top;margin-left: 20px;}
+
+.main{
+    background: #f1f1f1;
+    min-height: 700px;
+}
+.uc-main{
+    margin-top: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.uc-main .left{
+    width: 200px;
+    float: left;
+}
+
+.uc-main .right{
+    width: 930px;
+    padding:20px 25px;
+    float: right;
+    background: #fff;
+    min-height: 200px;
+}
+
+
+.uc-main .left  .tab-bar
+{
+    border-radius:5px;
+    background: #fff;
+    padding:30px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.tab:hover{
+    cursor: pointer;
+    color:#CC9756;
+}
+.tab-active{
+    color:#CC9756!important;
+}
+
+.uc-main .left  .tab{
+    display: block;
+    border-bottom: 0 none;
+    padding:10px 0;
+    text-align: center;
+    color:#333;
+    font-size: 16px;
+}
+
+.bid-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding:0;
+    background: rgba(243,245,249,1);
+
+}
+
+.bid-item{
+    width:300px;
+    padding:5px;
+    height:330px;
+    margin:10px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bid-item img{
+    width: 300px;
+    height: 200px;
+}
+
+.clean{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+    background: url("../../public/image/clean.png");
+    cursor: pointer;
+}
+
+.bid-item-con{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.bid-item .title{
+    font-size:12px;
+    color:rgb(51,51,51);
+    padding:5px 10px 0;
+    height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.bid-item .bid-info{
+    height: 20px;
+    padding:5px 10px;
+}
+
+.bid-item .bid-info .status{
+    height: 20px;
+    display: inline-block;
+    font-size:12px;
+    line-height: 20px;
+    color:#fff;
+    padding:0 10px;
+    background:linear-gradient(-90deg,rgba(36,178,144,1),rgba(70,216,131,1));
+    border-radius:10px;
+    text-align: center;
+}
+
+.bid-item .bid-info .bid-num{
+    width:46px;
+    height:20px;
+    background:rgba(230,230,230,1);
+    border-radius:10px;
+    color:rgba(103,103,103,1);
+    line-height: 20px;
+    padding:0 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.bid-item .price{
+    font-size: 12px;
+    padding-left: 10px;
+    color:rgba(102,102,102,1);
+}
+
+.bid-item .amount{
+    font-size:30px;
+    font-family:Microsoft YaHei;
+    color:rgba(204,151,86,1);
+}
+
+.bid-item .date{
+    height: 12px;
+    font-size: 12px;
+    padding-left:10px;
+    color:rgba(153,153,153,1)
+
+}
+
+.book-bid-item{
+    height: 366px;
+}
+
+.book-code{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color:#fff;
+    font-size: 16px;
+    background:linear-gradient(90deg,rgba(204,151,86,1),rgba(226,193,153,1));
+    margin-top: 10px;
+}
+.pagination-history-box,.pagination-book-box{
+    text-align: center;
+    display: none;
+}
+.history-bid-list-box{
+    display: none;
+}

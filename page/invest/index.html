@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>能拍·严选</title>
+    <link href="../../public/image/header_logo.png" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/dialog.css">
+    <link rel="stylesheet" href="../../public/css/city-picker.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="../../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../../public/js/ajax/index.js"></script>
+    <script src="../../public/js/dialog.js"></script>
+    <script src="../../public/js/auth.js"></script>
+    <script src="../../public/js/city-picker.js"></script>
+    <script src="../../public/js/city-data.js"></script>
+    <script src="./index.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+<div id="wapper">
+    <div class="header">
+        <div class="header-top">
+            <div class="w1200 flex flex-justify-content-space-between">
+                <div>
+                    客服电话：400-015-9899
+                </div>
+                <div class="header-top-right">
+                    <span class="login-signup" onclick="loginPopup()">登录注册</span>
+                    <a class="top-user" id="top-user" href="../uc/index.html" style="display: none"></a>
+                    <span class="logout" href="javascript:void(0)" style="display:none;" onclick="logout()">退出</span>
+                    <span class="win-img-show">关注我们
+							<span class="img-block">
+								<i class="trangle"></i>
+								<img src="../../public/image/weixin.png"/>
+							</span>
+						</span>
+                    <!-- <span>下载app</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="w1200 flex header-content flex-align-items-center">
+            <a class="logo" href="../../index.html"></a>
+            <a class="go_index" href="../../index.html">能拍·严选</a>
+            <div class="nav-bar flex1">
+                <a href="../../index.html" class="nav">首页<i class="slider"></i></a>
+                <a href="../bid-category/index.html" class="nav">标的物分类<i class="slider"></i></a>
+                <a href="../partner/index.html" class="nav">合作机构<i class="slider"></i></a>
+                <a class="nav nav-active">投资·合作<i class="slider"></i></a>
+                <a href="../qa/index.html" class="nav">帮助中心<i class="slider"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="content">
+            <div class="block block1">
+                <div class="num" style="left:100px">
+                    01
+                </div>
+
+                <div class="line" style="left:110px"></div>
+
+                <div class="w1124 w1124-1">
+
+
+                    <div class="con" style="margin-left: 100px;">
+                        <h1>公司入驻</h1>
+                        <p style="margin-top: 20px">
+                            拍蚁拍平台可构建起包含驻点、勘验、看样及数据处理等全方位的司法网拍辅助模式，若贵公司网拍线下服务需求，请点击下方的入驻申请按钮，填写基本资料，平台将立即与您取得联系安排上门演示汇报。</p>
+                        <a href="javascript:void(0)" class="button" id="apply-in" onclick="openInvestPop('申请入驻','#doApply')">申请入驻</a>
+                    </div>
+
+
+                </div>
+                <div class="w640">
+                    <img src="../../public/image/invest4.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="block block2">
+                <div class="num">
+                    02
+                </div>
+
+                <div class="line"></div>
+
+                <div class="w1124">
+
+                    <div class="con">
+                        <h1>加盟合作</h1>
+                        <p style="margin-top: 20px">
+                            如果贵公司希望与我们进行优势互补，建立商务合作关系，请点击下方按钮，填写贵公司的基本信息，我们将尽快与您联系。</p>
+                        <a href="javascript:void(0)" class="button" onclick="openInvestPop('加盟合作','#doJoin')">加盟合作</a>
+                    </div>
+                </div>
+                <div class="w640">
+                    <img src="../../public/image/invest2.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="block block1">
+                <div class="num">
+                    03
+                </div>
+
+                <div class="line"></div>
+
+                <div class="w1124 w1124-1">
+
+
+                    <div class="con">
+                        <h1>投资机会</h1>
+                        <p style="margin-top: 20px">
+                            对特殊资产有投资意向的客户，请留下您的联系方式，我们将安排专人与您联系，为您提供量身定制的特殊资产投资机会.</p>
+                        <a href="javascript:void(0)" class="button" onclick="openInvestPop('投资机会','#doInvest')">投资机会</a>
+                    </div>
+
+
+                </div>
+                <div class="w640">
+                    <img src="../../public/image/invest3.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="block block2">
+                <div class="num">
+                    04
+                </div>
+
+                <div class="line"></div>
+
+                <div class="w1124">
+
+                    <div class="con">
+                        <h1>咨询客服</h1>
+                        <p style="margin-top: 20px">
+
+                            如果您对参拍流程、意向标的物有任何疑问，或者需要了解我们
+                            的服务内容，非常欢迎您直接与我们联络，我们将竭诚为您解答。
+
+                        </p>
+
+                        <div class="itel">400-015-9899</div>
+                    </div>
+                </div>
+                <div class="w640">
+                    <img src="../../public/image/invest1.png" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="w1200 flex flex-justify-content-space-between" style="height: 170px;">
+            <div class="left">
+                <div class="hot-line">
+                    <div class="line-logo"></div>
+                    <div class="number-time">
+                        <div class="number">400-015-9899</div>
+                        <div class="time">服务时间：9:00-18:00</div>
+                    </div>
+                </div>
+                <div class="address">公司地址：深圳市南山区粤海街道滨海社区海天一路6号百度国际大厦东塔楼37层
+                </div>
+                <div class="bdata-address">邮箱：<a href="mailto:nengpaifafu@163.com?subject=欢迎您来信！&body=写下您的建议">nengpaifafu@163.com</a></div>
+            </div>
+            <div class="right flex">
+                <!-- <div class="app-down flex flex-direction-column flex-align-items-center">
+                    <div></div>
+                    <span>APP下载</span>
+                </div> -->
+                <div class="weapp flex flex-direction-column flex-align-items-center">
+                    <div></div>
+                    <span>微信小程序</span>
+                </div>
+                <div class="weapp flex flex-direction-column flex-align-items-center">
+                    <div></div>
+                    <span>官方微信</span>
+                </div>
+            </div>
+        </div>
+        <div class="icp">深圳能拍网络科技有限公司 粤ICP备20000781号</div>
+    </div>
+</div>
+
+
+<div class="popup popup-nopad" id="doLog">
+    <div class="popup-login">
+        <div class="popup-title">登录注册</div>
+        <label class="popup-login-close" onclick="loginPopupClose()"></label>
+        <div class="login-list">
+            <div class="login-item">
+                <div class="label">手机号码</div>
+                <div class="input"><input type="text" placeholder="请输入手机号码" id="mobile" maxlength="11" autocomplete="off"></div>
+            </div>
+
+            <div class="login-item" style="position: relative">
+                <div class="label">短信验证码</div>
+                <div class="input"><input type="text" placeholder="短信验证码" class="sm-code" id="smcode" maxlength="6"></div>
+                <a class="sm-code-btn" onclick="getMsgCode(this)">获取短信验证码</a>
+            </div>
+
+            <div style="padding-top: 50px"> <button class="login-btn" id="login-btn" onclick="doLogin(this)">登录</button></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="popup popup-nopad" id="doApply">
+    <div class="popup-login">
+        <div class="popup-title"></div>
+        <label class="popup-login-close" onclick="applyPopupClose('#doApply')"></label>
+        <div class="login-list">
+            <div class="login-item">
+                <div class="label">公司名称</div>
+                <div class="input"><input type="text" placeholder="请输入公司名称" id="apply_cname"  autocomplete="off"></div>
+            </div>
+
+            <div class="login-item">
+                <div class="label">公司所在地</div>
+                <div class="input" style="border:0 none">
+                    <div class="city-picker-selector" id="city-picker-selector-apply">
+                        <div class="selector-item storey province">
+                            <a href="javascript:;" class="selector-name reveal">北京市</a>
+                            <input type="hidden" name="userProvinceId" class="input-price val-error" id="apply_province" value="110000" data-required="userProvinceId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>北京市</li>
+                                    <li>天津市</li>
+                                    <li>河北省</li>
+                                    <li>山西省</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="selector-item storey city">
+                            <a href="javascript:;" class="selector-name reveal">北京市</a>
+                            <input type="hidden" name="userCityId" class="input-price val-error" id="apply_city" value="110100" data-required="userCityId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>北京市</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="selector-item storey district">
+                            <a href="javascript:;" class="selector-name reveal">海淀区</a>
+                            <input type="hidden" name="userDistrictId" class="input-price val-error" id="apply_area" value="110108" data-required="userDistrictId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>东城区</li>
+                                    <li>西城区</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                <div class="input"><input type="text" placeholder="请输入公司所在地" class="sm-code" id="address" maxlength="6"></div>-->
+            </div>
+            <div class="login-item">
+                <div class="label">姓名</div>
+                <div class="input"><input type="text" placeholder="请输入姓名" class="sm-code" id="apply_name"></div>
+            </div>
+            <div class="login-item">
+                <div class="label">手机号码</div>
+                <div class="input"><input type="text" placeholder="请输入手机号码" class="sm-code" id="apply_mobile" maxlength="11"></div>
+
+            </div>
+
+            <div class="login-item" style="position: relative">
+                <div class="label">验证码</div>
+                <div class="input"><input type="text" placeholder="短信验证码" class="sm-code" id="apply_smcode" maxlength="6"></div>
+                <a class="sm-code-btn" onclick="getInvestMsgCode(this,'#apply_mobile')">获取短信验证码</a>
+            </div>
+
+            <div style="padding-top: 50px"> <button class="login-btn"  onclick="doApply(this)">立即申请</button></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup-nopad" id="doJoin">
+    <div class="popup-login">
+        <div class="popup-title"></div>
+        <label class="popup-login-close" onclick="applyPopupClose('#doJoin')"></label>
+        <div class="login-list">
+            <div class="login-item">
+                <div class="label">公司名称</div>
+                <div class="input"><input type="text" placeholder="请输入公司名称" id="join_cname"  autocomplete="off"></div>
+            </div>
+
+            <div class="login-item">
+                <div class="label">公司所在地</div>
+                <div class="input" style="border:0 none">
+                    <div class="city-picker-selector" id="city-picker-selector-join">
+                        <div class="selector-item storey province">
+                            <a href="javascript:;" class="selector-name reveal">北京市</a>
+                            <input type="hidden" name="userProvinceId" class="input-price val-error" id="join_province" value="110000" data-required="userProvinceId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>北京市</li>
+                                    <li>天津市</li>
+                                    <li>河北省</li>
+                                    <li>山西省</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="selector-item storey city">
+                            <a href="javascript:;" class="selector-name reveal">北京市</a>
+                            <input type="hidden" name="userCityId" class="input-price val-error" id="join_city" value="110100" data-required="userCityId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>北京市</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="selector-item storey district">
+                            <a href="javascript:;" class="selector-name reveal">海淀区</a>
+                            <input type="hidden" name="userDistrictId" class="input-price val-error" id="join_area" value="110108" data-required="userDistrictId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>东城区</li>
+                                    <li>西城区</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                <div class="input"><input type="text" placeholder="请输入公司所在地" class="sm-code" id="address" maxlength="6"></div>-->
+            </div>
+            <div class="login-item">
+                <div class="label">姓名</div>
+                <div class="input"><input type="text" placeholder="请输入姓名" class="sm-code" id="join_name"></div>
+            </div>
+            <div class="login-item">
+                <div class="label">手机号码</div>
+                <div class="input"><input type="text" placeholder="请输入手机号码" class="sm-code" id="join_mobile"></div>
+
+            </div>
+
+            <div class="login-item" style="position: relative">
+                <div class="label">验证码</div>
+                <div class="input"><input type="text" placeholder="短信验证码" class="sm-code" id="join_smcode" maxlength="6"></div>
+                <a class="sm-code-btn" onclick="getInvestMsgCode(this,'#join_mobile')">获取短信验证码</a>
+            </div>
+
+            <div style="padding-top: 50px"> <button class="login-btn"  onclick="doJoin(this)">立即申请</button></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup-nopad" id="doInvest">
+    <div class="popup-login">
+        <div class="popup-title"></div>
+        <label class="popup-login-close" onclick="applyPopupClose('#doInvest')"></label>
+        <div class="login-list">
+            <div class="login-item">
+                <div class="label-invest">投资主体</div>
+                <div class="input"><input type="text" placeholder="请输入投资主体" id="orgName" autocomplete="off"></div>
+            </div>
+
+            <div class="login-item">
+                <div class="label-invest">关注区域</div>
+                <div class="input" style="border:0 none">
+                    <div class="city-picker-selector" id="city-picker-selector-invest">
+                        <div class="selector-item storey province">
+                            <a href="javascript:;" class="selector-name reveal">北京市</a>
+                            <input type="hidden" name="userProvinceId" class="input-price val-error" value="110000" id="invest_province" data-required="userProvinceId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>北京市</li>
+                                    <li>天津市</li>
+                                    <li>河北省</li>
+                                    <li>山西省</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="selector-item storey city">
+                            <a href="javascript:;" class="selector-name reveal">北京市</a>
+                            <input type="hidden" name="userCityId" class="input-price val-error" value="110100" id="invest_city" data-required="userCityId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>北京市</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="selector-item storey district">
+                            <a href="javascript:;" class="selector-name reveal">海淀区</a>
+                            <input type="hidden" name="userDistrictId" class="input-price val-error" value="110108" id="invest_area" data-required="userDistrictId">
+                            <div class="selector-list listing hide">
+                                <ul>
+                                    <li>东城区</li>
+                                    <li>西城区</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                <div class="input"><input type="text" placeholder="请输入公司所在地" class="sm-code" id="address" maxlength="6"></div>-->
+            </div>
+            <div class="login-item">
+                <div class="label-invest">意向标的物类型：</div>
+                <div class="input" style="border:0 none"><select id="type"><option value="0">房产</option><option value="1">机动车</option><option value="2">土地</option><option value="3">其他</option></select></div>
+                <!--                <div class="input"><input type="text" placeholder="请输入姓名" class="sm-code" id="type" maxlength="6"></div>-->
+            </div>
+            <div class="login-item">
+                <div class="label-invest">计划投资总额度：</div>
+                <div class="input"><input type="text" placeholder="请输入计划投资总额度" class="sm-code" id="totalAmount"></div>
+
+            </div>
+            <div class="login-item">
+                <div class="label-invest">单笔投资额度：</div>
+                <div class="input"><input type="text" placeholder="请输入单笔投资额度" class="sm-code" id="onceAmount"></div>
+
+            </div>
+
+
+            <div class="login-item">
+                <div class="label-invest">特殊需求说明：</div>
+                <div class="input"><input type="text" placeholder="请输入特殊需求说明" class="sm-code" id="des"></div>
+
+            </div>
+
+
+            <div class="login-item">
+                <div class="label-invest">联系人姓名：</div>
+                <div class="input"><input type="text" placeholder="请输入联系人姓名" class="sm-code" id="invest_name"></div>
+
+            </div>
+
+            <div class="login-item">
+                <div class="label-invest">联系人手机：</div>
+                <div class="input"><input type="text" placeholder="请输入手机号码" class="sm-code" id="invest_mobile"></div>
+
+            </div>
+
+            <div class="login-item" style="position: relative">
+                <div class="label-invest">验证码</div>
+                <div class="input"><input type="text" placeholder="请输入短信验证码" class="sm-code" id="invest_smcode"></div>
+                <a class="sm-code-btn" onclick="getInvestMsgCode(this,'#invest_mobile')">获取短信验证码</a>
+            </div>
+
+            <div style="padding-top: 50px"> <button class="login-btn" id="apply-btn" onclick="doInvest(this)">立即申请</button></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="popup-bg" id="popBg"></div>
+</body>
+
+
+</html>
